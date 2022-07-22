@@ -97,7 +97,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-        </script>
+    </script>
 
     <script>
         save = document.getElementById("save");
@@ -124,7 +124,7 @@
                     <th scope="row">${index + 1}</th>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td>
-                    <td><button onclick="del(4)" class="btn">Remove</button></td>
+                    <td><button onclick="del(${index})" class="btn">Remove</button></td>
                 </tr>`;
             });
 
@@ -157,7 +157,7 @@
                     <th scope="row">${index + 1}</th>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td>
-                    <td><button class="btn" onclick="del(${index})">Remove</button></td>
+                    <td><button onclick="del(${index})" class="btn")">Remove</button></td>
                 </tr>`;
             });
 
