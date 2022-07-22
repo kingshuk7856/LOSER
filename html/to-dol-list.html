@@ -70,6 +70,9 @@
 
         <button type="submit" id="save" class="my-3 btn btn-primary">Save</button>
 
+        <div class="my-5 lead">
+            <h4>List data</h4>
+        </div>
 
         <table class="table">
             <thead>
@@ -124,7 +127,7 @@
                     <th scope="row">${index + 1}</th>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td>
-                    <td><button onclick="del(${index})" class="btn">Remove</button></td>
+                    <td><button onclick="del(${index})" class="btn btn-sm">Remove</button></td>
                 </tr>`;
             });
 
@@ -157,7 +160,7 @@
                     <th scope="row">${index + 1}</th>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td>
-                    <td><button onclick="del(${index})" class="btn")">Remove</button></td>
+                    <td><button onclick="del(${index})" class="btn btn-sm")">Remove</button></td>
                 </tr>`;
             });
 
