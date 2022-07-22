@@ -164,10 +164,10 @@
             tb.innerHTML = str;
         })
 
-        del = (item)=> {
+        del = (itemIndex)=> {
             itemStr = localStorage.getItem('item');
             itemStrParse = JSON.parse(itemStr);
-            itemStrParse.splice(0,1);
+            itemStrParse.splice(itemIndex,1);
             localStorage.setItem('item', JSON.stringify(itemStrParse));
 
             load();
