@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects</title>
+    <title>Loser</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -14,20 +14,20 @@
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Loser</a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -55,35 +55,42 @@
         </div>
     </nav>
 
-    <div class="container ">
-        <div class="text-center">
-            Welcome to projects
+    <div class="container">
+        <div class="text-center display-3">
+            Notes
         </div>
 
-        <div class="">
-            <ol >
-                <li class="my-4">
-                    <a href="clock.html">Clock</a>
-                </li>
-
-                <li class="my-4">
-                    <a href="to-dol-list.html">To do list</a>
-                </li>
-
-                <li class="my-4">
-                    <a href="notes.html">Notes</a>
-                </li>
-            </ol>
+        <div class="mt-5 mb-5">
+            <input id="ntxt" class="form-control" type="text" placeholder="Enter Your Note here"
+                aria-label="Note-writer">
+            <input id="add" class="btn btn-warning mt-3" type="button" value="add">
         </div>
+
+        <div id="main" class="row">
+
+            <div class="mb-5 col-lg-3 col-md-4 col-sm-6">
+                <div class="card text-bg-primary">
+                    <img src="img/atomic.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="cttl" class="card-title">1</h5>
+                        <p id="ctxt" class="card-text">Welcome to Notes</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+        </div>
+
+
+
     </div>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script src="js/notes.js"></script>
 </body>
 
 </html>
