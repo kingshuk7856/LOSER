@@ -7,6 +7,7 @@
     <title>Loser</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/notes.css">
 </head>
 
 <body>
@@ -56,21 +57,28 @@
     </nav>
 
     <div class="container">
-        <div class="text-center display-3">
+        <div class="text-center display-1">
             Notes
         </div>
 
-        <div class="mt-5 mb-5">
+        <div id="inputArea" class="mt-5 mb-5">
+            <input id="nttl" class="form-control mb-3" type="text" placeholder="Enter Your Title"
+            aria-label="Note-writer">
             <input id="ntxt" class="form-control" type="text" placeholder="Enter Your Note here"
                 aria-label="Note-writer">
             <input id="add" class="btn btn-warning mt-3" type="button" value="add">
         </div>
 
+        <div>
+            <p class="display-6">Your Saved Notes</p>
+        </div>
+        <hr class="style18">
+
         <div id="main" class="row">
 
             <div class="mb-5 col-lg-3 col-md-4 col-sm-6">
                 <div class="card text-bg-primary">
-                    <img src="img/atomic.png" class="card-img-top" alt="...">
+                    <img src="img/notes.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 id="cttl" class="card-title">1</h5>
                         <p id="ctxt" class="card-text">Welcome to Notes</p>
@@ -78,7 +86,7 @@
                 </div>
             </div>
 
-            
+
 
 
         </div>
