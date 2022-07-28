@@ -21,13 +21,20 @@ function load() {
     if (localStorage.storedTxt == null) {
         str += `
             <div class="mb-5 col-lg-3 col-md-4 col-sm-6">
-                <div class="card text-bg-primary">
-                    <img src="img/atomic.png" class="card-img-top" alt="image">
-                    <div class="card-body">
-                        <h5 id="cttl" class="card-title">1</h5>
-                        <p id="ctxt" class="card-text">Welcome to atomic</p>
+                <div class="card text-primary" style="width: 250px;">
+                <img src="img/atomic.png" class="card-img-top" alt="image">
+                <div class="card-body">
+                        <h5 id="cttl" class="card-title">Welcome to Notes</h5>
+                        <p id="ctxt" class="card-text">Add, customize your notes here</p>
                     </div>
                 </div>
+            </div>
+            `
+    }
+    else if (localStorage.storedTxt == '[]') {
+        str += `
+            <div>
+            <p><i>Nothing to show, add some notes here</i></p>  
             </div>
             `
     }
@@ -79,7 +86,7 @@ function load() {
                 </div>
             </div>
             `
-            } 
+            }
             else {
                 str += `
             <div class="mb-5 col-lg-3 col-md-4 col-sm-6">
