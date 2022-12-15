@@ -9,10 +9,7 @@ ntxt.addEventListener('click', () => {
     ntxt.style.height = "100px";
 })
 
-
 onload = load();
-
-
 
 //loading all the contents in the localStorage
 function load() {
@@ -105,7 +102,6 @@ function load() {
     }
     document.getElementById('main').innerHTML = str;
 }
-
 
 
 //adding contents to the local storage
